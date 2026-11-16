@@ -1,0 +1,63 @@
+METADATA CLEANER 1.4 — СТОРОННИЕ КОМПОНЕНТЫ И УСЛОВИЯ ПЕРЕДАЧИ
+Дата проверки: 16.11.2026
+
+Mutagen не используется и исключён из исполняемой сборки.
+Аудиофайлы доступны только для чтения метаданных. Видео обрабатывает ExifTool.
+
+Для запуска достаточно одного MetadataCleaner-1.4.exe.
+ПЕРЕДАВАЙТЕ ДРУЗЬЯМ ПОЛНЫЙ КОМПЛЕКТ ИЗ КАНАЛА ОБНОВЛЕНИЙ:
+EXE и MetadataCleaner-1.4-relink-kit.zip с LICENSES, SOURCES,
+объектными модулями приложения и инструкциями пересборки RELINK-KIT.md.
+Не отделяйте лицензии и материалы пересборки от комплекта распространения.
+
+ОСНОВНЫЕ КОМПОНЕНТЫ
+Python 3.12.10 — PSF License и уведомления включённых компонентов.
+Tcl/Tk 8.6 — BSD-подобные условия Tcl/Tk.
+pikepdf 10.18.0 — MPL-2.0; библиотека не изменялась.
+qpdf — Apache-2.0; libjpeg-turbo — IJG/BSD/Zlib; OpenSSL — Apache-2.0;
+zlib — Zlib; условия Microsoft Visual C++ Runtime сохранены отдельно.
+lxml 6.1.3 — BSD-3-Clause; libxml2/libxslt/libexslt — MIT-подобные условия;
+в поставке Windows есть статически включённый libiconv под LGPL-2.1-or-later.
+Pillow 13.0.0 — MIT-CMU, с лицензиями включённых библиотек изображений.
+olefile 0.47 — BSD и исторические уведомления PIL.
+packaging — Apache-2.0 OR BSD-2-Clause; charset-normalizer — MIT.
+PyInstaller — GPL со специальным исключением для собранного приложения;
+его исключение не отменяет условия других компонентов.
+ExifTool 13.63 и стандартный Perl 5.32.1 используются по Artistic License 1.0.
+Запуск выполняется отдельным процессом; исходные файлы поставщика не изменены.
+Обёртка npm exiftool-vendored.exe — MIT; launcher Oliver Betz — CC0.
+GCC runtime в переносимом Perl — GPL с GCC Runtime Library Exception;
+winpthreads/MinGW и liblzma имеют собственные уведомления в LICENSES.
+
+ИСХОДНИКИ И ВОЗМОЖНОСТЬ ПЕРЕСБОРКИ
+SOURCES содержит исходные архивы точных версий Python-библиотек и закреплённые
+исходники Windows-зависимостей lxml. SHA-256 и адреса приведены в components.json
+и native-sources.json. Исходники MPL/LGPL остаются под своими лицензиями.
+Нативные Windows-зависимости lxml: libxml2 2.11.9, libxslt 1.1.45,
+libiconv 1.19, zlib 1.4; комплект включает исходники и проекты MSVC поставщика.
+Инструкции восстановления приложения и замены библиотеки: RELINK-KIT.md.
+Изменённую LGPL-библиотеку можно собрать и включить в новую сборку приложения.
+Объектные модули приложения предоставлены для этого; их не нужно извлекать из EXE.
+Обратная разработка для отладки изменений LGPL-компонентов разрешена.
+Авторские уведомления приложения не ограничивают права по MPL/LGPL/Artistic
+и остальным лицензиям сторонних компонентов.
+
+Для ExifTool/Perl стандартные исходники и инструкции поставщика доступны:
+https://github.com/exiftool/exiftool/tree/13.63
+https://www.cpan.org/src/5.0/perl-5.32.1.tar.gz
+https://strawberryperl.com/releases.html
+https://oliverbetz.de/pages/Artikel/ExifTool-for-Windows
+ExifTool .pm и .pl также входят в каталог vendor/exiftool исходного комплекта.
+
+Тексты лицензий приведены полностью в LICENSES, включая лицензии вложенных
+зависимостей pikepdf и исходный архив уведомлений Strawberry Perl.
+Исторический архив Strawberry содержит уведомления и о компонентах полной
+поставки Perl, которые могут отсутствовать в сокращённой поставке ExifTool.
+Наличие текста лицензии в папке не означает включение соответствующей программы.
+
+Программа и сторонние компоненты предоставляются без гарантий в пределах,
+допускаемых соответствующими лицензиями и применимым законодательством.
+
+В 1.4 optional Math::BigInt::GMP исключён из runtime.
+cryptography — Apache-2.0 OR BSD-3-Clause; cffi — MIT; pycparser — BSD-3-Clause.
+Публичная поставка включает object relink-kit, инструкции RELINK-KIT.md и исходники MPL/LGPL.
