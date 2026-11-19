@@ -90,7 +90,10 @@ Math::BigInt::GMP runtime в `build\vendor-exiftool`. Не используйт�
 
 Экспорт использует белый список: app, cleaner_core, ui_design, metadata_view,
 network_paths, windows_shell, activation_ui, updater, update_ui и четыре клиентских
-модуля licensing. Для них создаются `.pyc` в старой схеме расположения
+модуля licensing. Начиная с 1.5 добавлены `licensing.trust` и `licensing.online`
+(всего 15 клиентских модулей), а также ресурс `licensing/online_public_key.json`.
+Служба `activation_service` и серверный Waitress в клиентский комплект не входят.
+Для них создаются `.pyc` в старой схеме расположения
 (`objects\app.pyc`, `objects\licensing\__init__.pyc` и т. д.), без собственных
 `.py` и без абсолютного пути разработчика в `co_filename`. Закрытые инструменты,
 личные настройки, документы, журналы, лицензии пользователей и ключи
