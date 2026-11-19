@@ -1,12 +1,12 @@
-METADATA CLEANER 1.4.1 — СТОРОННИЕ КОМПОНЕНТЫ И УСЛОВИЯ ПЕРЕДАЧИ
-Дата проверки: 16.11.2026
+METADATA CLEANER 1.5.0 — СТОРОННИЕ КОМПОНЕНТЫ И УСЛОВИЯ ПЕРЕДАЧИ
+Дата проверки: 19.11.2026
 
 Mutagen не используется и исключён из исполняемой сборки.
 Аудиофайлы доступны только для чтения метаданных. Видео обрабатывает ExifTool.
 
-Для запуска достаточно одного MetadataCleaner-1.4.1.exe.
+Для запуска достаточно одного MetadataCleaner-1.5.exe.
 ПЕРЕДАВАЙТЕ ДРУЗЬЯМ ПОЛНЫЙ КОМПЛЕКТ ИЗ КАНАЛА ОБНОВЛЕНИЙ:
-EXE и MetadataCleaner-1.4.1-relink-kit.zip с LICENSES, SOURCES,
+EXE и MetadataCleaner-1.5.0-relink-kit.zip с LICENSES, SOURCES,
 объектными модулями приложения и инструкциями пересборки RELINK-KIT.md.
 Не отделяйте лицензии и материалы пересборки от комплекта распространения.
 
@@ -59,5 +59,5 @@ ExifTool .pm и .pl также входят в каталог vendor/exiftool и
 допускаемых соответствующими лицензиями и применимым законодательством.
 
 В 1.4 optional Math::BigInt::GMP исключён из runtime.
-cryptography — Apache-2.0 OR BSD-3-Clause; cffi — MIT; pycparser — BSD-3-Clause.
+cryptography — Apache-2.0 OR BSD-3-Clause; cffi — MIT-0; pycparser — BSD-3-Clause.
 Публичная поставка включает object relink-kit, инструкции RELINK-KIT.md и исходники MPL/LGPL.
